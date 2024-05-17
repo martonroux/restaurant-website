@@ -1,0 +1,77 @@
+@import "vars.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0; /* Browsers have a default padding and/or margin. */
+  margin: 0;
+}
+
+h1,
+.h1 {
+  font-family: var(--font-family-regular);
+  font-size: var(--h1-font-size);
+  color: var(--black-color);
+}
+
+h2,
+.h2 {
+  font-family: var(--font-family-regular);
+  font-size: var(--h2-font-size);
+  color: var(--black-color);
+}
+
+h3,
+.h3 {
+  font-family: var(--font-family-regular);
+  font-size: var(--h3-font-size);
+  color: var(--black-color);
+}
+
+h4,
+.h4 {
+  font-family: var(--font-family-regular);
+  font-size: var(--h4-font-size);
+  color: var(--black-color);
+}
+
+h5,
+.h5 {
+  font-family: var(--font-family-regular);
+  font-size: var(--h5-font-size);
+  color: var(--black-color);
+}
+
+h6,
+.h6 {
+  font-family: var(--font-family-regular);
+  font-size: var(--h6-font-size);
+  color: var(--black-color);
+}
+
+p {
+  font-family: var(--font-family-regular);
+  font-size: var(--font-size);
+  color: var(--black-color);
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family-regular);
+  cursor: pointer;
+  color: var(--black-color);
+}
+
+.router-link {
+  font-family: var(--font-family-regular);
+  text-decoration: none;
+}

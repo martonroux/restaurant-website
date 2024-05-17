@@ -1,0 +1,20 @@
+@import "fonts/charlotte.css";
+@import "fonts/garet.css";
+
+:root {
+    --font-family-regular: "Garet", sans-serif;
+    --font-family-highlight: "Charlotte", sans-serif;
+
+    --font-size: 18px;
+    --h6-font-size: calc(var(--font-size) * 1.333);
+    --h5-font-size: calc(var(--h6-font-size) * 1.333);
+    --h4-font-size: calc(var(--h5-font-size) * 1.333);
+    --h3-font-size: calc(var(--h4-font-size) * 1.333);
+    --h2-font-size: calc(var(--h3-font-size) * 1.333);
+    --h1-font-size: calc(var(--h2-font-size) * 1.333);
+
+    --black-color: #02040F;
+    --white-color: #FFFFFF;
+    --white-secondary-color: #F9F9F9;
+    --highlight-color: #FF474A;
+}
