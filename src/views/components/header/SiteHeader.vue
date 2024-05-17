@@ -70,6 +70,7 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  background-color: var(--white-color);
 }
 
 .row {

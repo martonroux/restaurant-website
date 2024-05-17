@@ -7,8 +7,15 @@ import SiteHeader from "./views/components/header/SiteHeader.vue";
     <SiteHeader />
   </header>
   <main>
+    <router-view/>
   </main>
 </template>
 
 <style scoped>
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
 </style>
