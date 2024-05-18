@@ -2,6 +2,7 @@
 import HomeRow from "../components/home/HomeRow.vue";
 import SavoirFaireRow from "../components/home/rows/SavoirFaireRow.vue";
 import EquipePassionneeRow from "../components/home/rows/EquipePassionneeRow.vue";
+import CadreUniqueRow from "../components/home/rows/CadreUniqueRow.vue";
 </script>
 
 <template>
@@ -17,7 +18,7 @@ import EquipePassionneeRow from "../components/home/rows/EquipePassionneeRow.vue
       <EquipePassionneeRow/>
     </HomeRow>
     <HomeRow image-url="/images/blank-img.png" :image-side="true">
-      <SavoirFaireRow/>
+      <CadreUniqueRow/>
     </HomeRow>
   </div>
 </template>

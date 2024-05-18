@@ -82,7 +82,9 @@ export default {
 
 .site-header__main-menu-button {
   color: var(--highlight-color);
-  font-size: var(--h6-font-size);
+  font-size: var(--h5-font-size);
+  font-family: var(--font-family-highlight);
+  font-weight: bolder;
 }
 
 .site-header__large-browser-menu {

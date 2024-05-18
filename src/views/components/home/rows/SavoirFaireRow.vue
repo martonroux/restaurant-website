@@ -6,8 +6,10 @@
   <div class="savoir-faire-row">
     <div class="savoir-faire-row__title">
       <h2 class="h4">Un</h2>
-<!--      <img src="/icons/savoir-faire.png" alt="Image de la Maison Rocher" class="savoir-faire-row__image-img">-->
-      <h2 class="h3" style="font-family: var(--font-family-highlight); font-weight: lighter">savoir-faire</h2>
+      <div class="savoir-faire-row__title__draw">
+        <h2 class="h3" style="font-family: var(--font-family-highlight); font-weight: lighter">savoir-faire</h2>
+        <img src="/icons/savoir-faire-line.png" alt="" class="savoir-faire-row__title__draw__drawing">
+      </div>
       <h2 class="h4">générationnel</h2>
     </div>
     <p class="savoir-faire-row__description">
@@ -29,6 +31,12 @@
 .savoir-faire-row__title h2 {
   margin: 0;
   padding: 0;
+}
+
+.savoir-faire-row__title__draw__drawing {
+  width: 210px;
+  position: absolute;
+  transform: translateY(-70%);
 }
 
 </style>
