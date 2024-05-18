@@ -3,6 +3,7 @@ import HomeRow from "../components/home/HomeRow.vue";
 import SavoirFaireRow from "../components/home/rows/SavoirFaireRow.vue";
 import EquipePassionneeRow from "../components/home/rows/EquipePassionneeRow.vue";
 import CadreUniqueRow from "../components/home/rows/CadreUniqueRow.vue";
+import RotatingBanner from "../components/home/RotatingBanner.vue";
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import CadreUniqueRow from "../components/home/rows/CadreUniqueRow.vue";
       <img v-if="width.windowWidth > 800" src="/icons/maison-rocher-title.png" alt="Logo de la Maison Rocher" class="home-page__logo-img">
       <img v-else src="/icons/maison-rocher-title-small.png" alt="Logo de la Maison Rocher" class="home-page__logo-img">
     </div>
+    <RotatingBanner/>
     <HomeRow image-url="/images/blank-img.png" :image-side="true">
       <SavoirFaireRow/>
     </HomeRow>
