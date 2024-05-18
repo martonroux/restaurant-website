@@ -5,19 +5,23 @@
 <template>
   <div class="home-row">
     <!-- If imageSide is true, then image is to the left -->
-    <img v-if="imageSide" :src="imageUrl" alt="Image de la Maison Rocher" class="home-row__image-img">
+    <img :src="imageUrl" alt="Image de la Maison Rocher" class="home-row__image-img" :style="{order : (imageSide && width.windowWidth > 800) ? 1 : 3}">
 
-    <div class="home-row__content">
+    <div class="home-row__content" style="order: 2">
       <slot></slot>
     </div>
-
-    <!-- If imageSide if false, then image is to the right -->
-    <img v-if="!imageSide" :src="imageUrl" alt="Image de la Maison Rocher" class="home-row__image-img">
   </div>
 </template>
 
 <script lang="ts">
+import {useWindowWidth} from "../../../composables/windowWidth.ts";
+
 export default {
+  data() {
+    return {
+      width: useWindowWidth()
+    }
+  },
   props: {
     imageSide: {
       type: Boolean,

@@ -35,6 +35,7 @@
   width: 170px;
   position: absolute;
   transform: translateY(-170%);
+  z-index: 1;
 }
 
 </style>
