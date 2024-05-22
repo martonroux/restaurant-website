@@ -4,7 +4,7 @@ import SavoirFaireRow from "../components/home/rows/SavoirFaireRow.vue";
 import EquipePassionneeRow from "../components/home/rows/EquipePassionneeRow.vue";
 import CadreUniqueRow from "../components/home/rows/CadreUniqueRow.vue";
 import RotatingBanner from "../components/home/RotatingBanner.vue";
-import HomeGalery from "../components/home/HomeGalery.vue";
+import HomeGalery from "../components/home/HomeGallery.vue";
 </script>
 
 <template>
@@ -22,6 +22,7 @@ import HomeGalery from "../components/home/HomeGalery.vue";
     <HomeRow image-url="/images/blank-img.png" :image-side="true">
       <CadreUniqueRow/>
     </HomeRow>
+    <span class="separator"/>
     <RotatingBanner/>
     <HomeGalery/>
   </div>
@@ -59,6 +60,10 @@ export default {
 .home-page__logo-img {
   width: 80%;
   max-width: 1000px;
+}
+
+.separator {
+  height: 3rem;
 }
 
 </style>

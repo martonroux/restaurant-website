@@ -59,14 +59,16 @@ export default {
 @media (max-width: 800px) {
   .home-row {
     flex-direction: column;
-  }
-  .home-row__image-img {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
   }
+  .home-row__image-img {
+    width: 100%;
+    max-width: 100%;
+  }
   .home-row__content {
-    max-width: 90%;
+    max-width: 100%;
   }
 }
 

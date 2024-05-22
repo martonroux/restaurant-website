@@ -6,12 +6,13 @@
     --font-family-highlight: "Charlotte", sans-serif;
 
     --font-size: 18px;
-    --h6-font-size: calc(var(--font-size) * 1.333);
-    --h5-font-size: calc(var(--h6-font-size) * 1.333);
-    --h4-font-size: calc(var(--h5-font-size) * 1.333);
-    --h3-font-size: calc(var(--h4-font-size) * 1.333);
-    --h2-font-size: calc(var(--h3-font-size) * 1.333);
-    --h1-font-size: calc(var(--h2-font-size) * 1.333);
+    --font-ratio: 1.250;
+    --h6-font-size: calc(var(--font-size) * var(--font-ratio));
+    --h5-font-size: calc(var(--h6-font-size) * var(--font-ratio));
+    --h4-font-size: calc(var(--h5-font-size) * var(--font-ratio));
+    --h3-font-size: calc(var(--h4-font-size) * var(--font-ratio));
+    --h2-font-size: calc(var(--h3-font-size) * var(--font-ratio));
+    --h1-font-size: calc(var(--h2-font-size) * var(--font-ratio));
 
     --black-color: #02040F;
     --white-color: #FFFFFF;

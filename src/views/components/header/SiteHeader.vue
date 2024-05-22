@@ -24,15 +24,15 @@ import MenuButton from "./MenuButton.vue";
     <div v-if="dropDownActive" class="site-header__small-browser-menu">
       <router-link to="/menu" class="site-header__large-browser-menu__button router-link" @click="toggleDropDown(false)">
         <p>Menu</p>
-        <img src="/icons/arrow.png" class="site-header__large-browser-menu__button-image" alt="arrow">
+        <img src="/icons/arrow.svg" class="site-header__large-browser-menu__button-image" alt="arrow">
       </router-link>
       <router-link to="/about" class="site-header__large-browser-menu__button router-link" @click="toggleDropDown(false)">
         <p>Réservations</p>
-        <img src="/icons/arrow.png" class="site-header__large-browser-menu__button-image" alt="arrow">
+        <img src="/icons/arrow.svg" class="site-header__large-browser-menu__button-image" alt="arrow">
       </router-link>
       <router-link to="/contact" class="site-header__large-browser-menu__button router-link" @click="toggleDropDown(false)">
         <p>Nous trouver</p>
-        <img src="/icons/arrow.png" class="site-header__large-browser-menu__button-image" alt="arrow">
+        <img src="/icons/arrow.svg" class="site-header__large-browser-menu__button-image" alt="arrow">
       </router-link>
     </div>
   </div>

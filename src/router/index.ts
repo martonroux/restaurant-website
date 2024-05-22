@@ -4,6 +4,7 @@ import HomePage from "../views/pages/HomePage.vue";
 import MenuPage from "../views/pages/MenuPage.vue";
 import AboutPage from "../views/pages/AboutPage.vue";
 import ContactPage from "../views/pages/ContactPage.vue";
+import BookingPage from "../views/pages/BookingPage.vue";
 
 const router = createRouter({
     routes: [
@@ -18,8 +19,13 @@ const router = createRouter({
             component: MenuPage,
         },
         {
+            path: '/booking',
+            name: 'Réservations',
+            component: BookingPage,
+        },
+        {
             path: '/about',
-            name: 'About',
+            name: 'A Propos',
             component: AboutPage,
         },
         {
