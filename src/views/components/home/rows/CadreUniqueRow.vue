@@ -12,7 +12,7 @@ import CTAButton from "../../generic/CTAButton.vue";
       </div>
     </div>
     <p class="cadre-unique-row__description">
-      Entouré de verdure et de jardins soigneusement entretenus, notre restaurant offre un havre de paix et de tranquillité. L'architecture élégante du manoir Rocher, combinée à une décoration intérieure raffinée, crée une ambiance chaleureuse et conviviale.
+      Entouré de verdure et de jardins soigneusement entretenus, notre restaurant offre un havre de paix et de tranquillité. L'architecture élégante de la maison Rocher, combinée à une décoration intérieure raffinée, crée une ambiance chaleureuse et conviviale.
     </p>
     <div class="cadre-unique-row__cta">
       <CTAButton link="/booking" text="Réserver une table" width="100%"/>
