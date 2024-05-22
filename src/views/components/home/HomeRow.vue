@@ -5,7 +5,9 @@
 <template>
   <div class="home-row">
     <!-- If imageSide is true, then image is to the left -->
-    <img :src="imageUrl" alt="Image de la Maison Rocher" class="home-row__image-img" :style="{order : (imageSide && width.windowWidth > 800) ? 1 : 3}">
+    <div class="home-row__img-container" :style="{order : (imageSide && width.windowWidth > 800) ? 1 : 3}">
+      <img :src="imageUrl" alt="Image de la Maison Rocher" class="home-row__image-img">
+    </div>
 
     <div class="home-row__content" style="order: 2">
       <slot></slot>
@@ -46,14 +48,24 @@ export default {
   max-width: 1200px;
 }
 
+.home-row__img-container {
+  width: 50%;
+  max-width: 50%;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .home-row__content {
   padding: 1.5rem;
   max-width: 50%;
 }
 
 .home-row__image-img {
-  width: 50%;
-  max-width: 50%;
+  width: auto;
+  height: 100%;
 }
 
 @media (max-width: 800px) {
@@ -63,7 +75,7 @@ export default {
     max-width: 600px;
     margin: 0 auto;
   }
-  .home-row__image-img {
+  .home-row__img-container {
     width: 100%;
     max-width: 100%;
   }

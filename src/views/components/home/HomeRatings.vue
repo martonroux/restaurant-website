@@ -30,31 +30,31 @@ export default {
         {
           "username": "Marie L.",
           "date": "Mai 2024",
-          "rating": "5",
+          "rating": 5,
           "description": "Un repas mémorable ! Chaque plat était une explosion de saveurs. Le personnel est aux petits soins. À essayer absolument."
         },
         {
           "username": "Thomas P.",
           "date": "Mai 2024",
-          "rating": "4",
+          "rating": 4,
           "description": "Très bon restaurant gastronomique. Les plats sont bien travaillés et le service est excellent. Je recommande pour une soirée spéciale."
         },
         {
           "username": "Sophie V.",
           "date": "Mai 2024",
-          "rating": "5",
+          "rating": 5,
           "description": "Magnifique découverte ! Les mets sont exquis et l'ambiance est parfaite pour un dîner en amoureux. Je reviendrai sans hésiter."
         },
         {
           "username": "Alexandre G.",
           "date": "Mai 2024",
-          "rating": "4",
+          "rating": 4,
           "description": "Très bonne adresse. Cuisine raffinée et service attentif. Un peu cher, mais ça vaut le coup pour la qualité."
         },
         {
           "username": "Julie T.",
           "date": "Mai 2024",
-          "rating": "5",
+          "rating": 5,
           "description": "Expérience inoubliable ! Les saveurs sont sublimes et le cadre est somptueux. Un sans faute du début à la fin."
         }
       ],
@@ -66,12 +66,21 @@ export default {
 
 <style scoped>
 
+.home-ratings {
+  padding: 3rem;
+}
+
 .home-ratings__title-container {
   text-align: center;
+  width: 100%;
 }
 
 .home-ratings__carousel__rating {
   width: 80%;
+}
+
+.home-ratings__carousel {
+  max-width: calc(100vw - 6rem);
 }
 
 </style>

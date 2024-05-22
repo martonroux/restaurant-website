@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="client-rating">
+  <div class="client-rating" :style="{width: width}">
     <p class="h5">{{ username }}</p>
     <p class="client-rating__date">{{ date }}</p>
     <img src="/icons/star-yellow.svg" alt="Star icon" class="client-rating__star"/>
@@ -37,6 +37,9 @@ export default {
     username: {
       type: String,
       required: true
+    },
+    width: {
+      type: String
     }
   }
 }
@@ -51,6 +54,10 @@ export default {
 .client-rating__date {
   font-size: 0.8rem;
   color: grey;
+}
+
+.client-rating__description {
+  text-wrap: normal;
 }
 
 </style>
