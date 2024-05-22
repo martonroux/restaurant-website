@@ -1,13 +1,17 @@
 <script setup lang="ts">
 import Carousel from 'primevue/carousel';
+import Image from "primevue/image";
 </script>
 
 <template>
-  <div>
-    <Carousel :value="images" :numVisible="3" :numScroll="1">
-      <template #item="slotProps">
-        <div class="image-item">
-          <img :src="slotProps.data.img" alt="image" />
+  <div class="home-gallery">
+    <div class="home-gallery__title-container">
+      <h2>Galerie</h2>
+    </div>
+    <Carousel class="carousel" :value="images" :num-visible="width.windowWidth > 1000 ? 3 : width.windowWidth > 800 ? 2 : 1" :num-scroll="1" :circular="true" :show-indicators="true" :autoplay-interval="6000">
+      <template v-slot:item="slotProps">
+        <div class="carousel__img">
+          <Image :src="slotProps.data.img" alt="Image" width="100%" preview />
         </div>
       </template>
     </Carousel>
@@ -15,6 +19,8 @@ import Carousel from 'primevue/carousel';
 </template>
 
 <script lang="ts">
+import {useWindowWidth} from "../../../composables/windowWidth";
+
 export default {
   data() {
     return {
@@ -24,24 +30,24 @@ export default {
         { img: "/images/blank-img.png" },
         { img: "/images/blank-img.png" },
         { img: "/images/blank-img.png" }
-      ]
+      ],
+      width: useWindowWidth()
     }
   }
 }
 </script>
 
 <style scoped>
-.image-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 150px;
+
+.home-gallery {
+  padding: 3rem;
+}
+.home-gallery__title-container {
+  text-align: center;
+}
+.carousel__img {
+  width: 80%;
+  max-width: 400px;
 }
 
-.image-item img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-}
 </style>
