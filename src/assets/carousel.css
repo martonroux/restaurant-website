@@ -1,0 +1,16 @@
+@import 'vars.css';
+
+.p-carousel-indicator {
+    border-radius: 2px;
+    background-color: lightgray;
+}
+
+.p-highlight {
+    background-color: var(--highlight-color);
+}
+
+.p-carousel-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

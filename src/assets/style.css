@@ -17,6 +17,7 @@ h1,
 .h1 {
   font-family: var(--font-family-regular);
   font-size: var(--h1-font-size);
+  font-weight: normal;
   color: var(--black-color);
 }
 
@@ -24,6 +25,7 @@ h2,
 .h2 {
   font-family: var(--font-family-regular);
   font-size: var(--h2-font-size);
+  font-weight: normal;
   color: var(--black-color);
 }
 
@@ -31,6 +33,7 @@ h3,
 .h3 {
   font-family: var(--font-family-regular);
   font-size: var(--h3-font-size);
+  font-weight: normal;
   color: var(--black-color);
 }
 
