@@ -5,6 +5,7 @@ import EquipePassionneeRow from "../components/home/rows/EquipePassionneeRow.vue
 import CadreUniqueRow from "../components/home/rows/CadreUniqueRow.vue";
 import RotatingBanner from "../components/home/RotatingBanner.vue";
 import HomeGalery from "../components/home/HomeGallery.vue";
+import HomeRatings from "../components/home/HomeRatings.vue";
 </script>
 
 <template>
@@ -25,11 +26,12 @@ import HomeGalery from "../components/home/HomeGallery.vue";
     <span class="separator"/>
     <RotatingBanner/>
     <HomeGalery/>
+    <HomeRatings/>
   </div>
 </template>
 
 <script lang="ts">
-import { useWindowWidth } from "../../composables/windowWidth.ts";
+import {useWindowWidth} from "../../composables/windowWidth.ts";
 
 export default {
   data() {
