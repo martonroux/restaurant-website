@@ -28,4 +28,11 @@ import CTAButton from "../generic/CTAButton.vue";
   margin-top: 2rem;
 }
 
+@media (max-width: 600px) {
+  .home-cta__content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
 </style>

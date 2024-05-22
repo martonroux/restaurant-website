@@ -50,4 +50,10 @@ export default {
   max-width: 400px;
 }
 
+@media (max-width: 600px) {
+  .home-gallery {
+    padding: 1rem;
+  }
+}
+
 </style>

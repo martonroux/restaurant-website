@@ -83,4 +83,13 @@ export default {
   max-width: calc(100vw - 6rem);
 }
 
+@media (max-width: 600px) {
+  .home-ratings {
+    padding: 1rem;
+  }
+  .home-ratings__carousel {
+    max-width: calc(100vw - 2rem);
+  }
+}
+
 </style>
