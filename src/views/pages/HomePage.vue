@@ -6,6 +6,8 @@ import CadreUniqueRow from "../components/home/rows/CadreUniqueRow.vue";
 import RotatingBanner from "../components/home/RotatingBanner.vue";
 import HomeGalery from "../components/home/HomeGallery.vue";
 import HomeRatings from "../components/home/HomeRatings.vue";
+import HomeCTA from "../components/home/HomeCTA.vue";
+import HomeCoords from "../components/home/HomeCoords.vue";
 </script>
 
 <template>
@@ -27,6 +29,8 @@ import HomeRatings from "../components/home/HomeRatings.vue";
     <RotatingBanner/>
     <HomeGalery/>
     <HomeRatings/>
+    <HomeCTA/>
+    <HomeCoords/>
   </div>
 </template>
 
