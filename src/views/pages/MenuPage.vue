@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import MenuComponent from "../components/menu/MenuComponent.vue";
-import MenuGallery from "../components/menu/MenuGallery.vue";
 </script>
 
 <template>
