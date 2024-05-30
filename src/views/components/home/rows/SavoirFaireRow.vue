@@ -6,12 +6,12 @@ import CTAButton from "../../generic/CTAButton.vue";
 <template>
   <div class="savoir-faire-row">
     <div class="savoir-faire-row__title">
-      <p class="h3">Un</p>
+      <p class="h2">Un</p>
       <div class="savoir-faire-row__title__draw">
-        <p class="h2" style="font-family: var(--font-family-highlight); font-weight: lighter">savoir-faire</p>
+        <p class="h1" style="font-family: var(--font-family-highlight); font-weight: lighter">savoir-faire</p>
         <img src="/icons/savoir-faire-line.png" alt="" class="savoir-faire-row__title__draw__drawing">
       </div>
-      <p class="h3">générationnel</p>
+      <p class="h2">générationnel</p>
     </div>
     <p class="savoir-faire-row__description">
       Fondée il y a plus de 90 ans, la Maison Rocher est un pilier de la gastronomie traditionnelle. Nos chefs talentueux allient recettes authentiques et innovation culinaire pour offrir une expérience unique. Découvrez la passion et l’excellence qui font notre renommée.

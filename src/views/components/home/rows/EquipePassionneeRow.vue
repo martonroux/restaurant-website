@@ -6,9 +6,9 @@ import CTAButton from "../../generic/CTAButton.vue";
 <template>
   <div class="equipe-passionnee-row">
     <div class="equipe-passionnee-row__title">
-      <p class="h3">Une équipe</p>
+      <p class="h2">Une équipe</p>
       <div class="equipe-passionnee-row__title__draw">
-        <p class="h2" style="font-family: var(--font-family-highlight); font-weight: lighter">passionnée</p>
+        <p class="h1" style="font-family: var(--font-family-highlight); font-weight: lighter">passionnée</p>
         <img src="/icons/passionnee-line.png" alt="" class="equipe-passionnee-row__title__draw__drawing">
       </div>
     </div>

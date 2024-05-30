@@ -6,7 +6,7 @@
     --font-family-highlight: "Charlotte", sans-serif;
 
     --font-size: 18px;
-    --font-ratio: 1.250;
+    --font-ratio: 1.2;
     --h6-font-size: calc(var(--font-size) * var(--font-ratio));
     --h5-font-size: calc(var(--h6-font-size) * var(--font-ratio));
     --h4-font-size: calc(var(--h5-font-size) * var(--font-ratio));

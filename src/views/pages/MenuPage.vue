@@ -5,8 +5,12 @@ import MenuComponent from "../components/menu/MenuComponent.vue";
 <template>
   <div class="menu-page">
     <div class="menu-page__title">
-      <h1>Notre <span class="menu-page__title__highlight">Menu</span></h1>
-      <img src="/icons/menu-line.svg" alt="" class="menu-page__title__line"/>
+      <h1>Notre
+        <span class="menu-page__title__highlight">
+          Menu
+          <img src="/icons/menu-line.svg" alt="" class="menu-page__title__line"/>
+        </span>
+      </h1>
     </div>
     <div class="menu-page__content">
       <MenuComponent title="Entrées" :dishes="entrees.dishes" :prices="entrees.prices"/>
@@ -124,7 +128,7 @@ export default {
   position: absolute;
   margin-top: 1rem;
 
-  transform: translate(110%, -110px);
+  transform: translate(-90%, 70px);
 }
 
 </style>
