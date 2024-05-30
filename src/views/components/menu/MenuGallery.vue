@@ -3,7 +3,8 @@ import Gallery from "../generic/Gallery.vue";
 </script>
 
 <template>
-  <Gallery :image-list="[image1, image2, image3]">
+  <Gallery :image-list="[{img: image1}, {img: image2}, {img: image3}]">
+    <h3>Un avant goût:</h3>
   </Gallery>
 </template>
 

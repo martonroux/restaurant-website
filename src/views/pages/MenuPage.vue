@@ -21,7 +21,7 @@ import MenuGallery from "../components/menu/MenuGallery.vue";
       <MenuComponent title="Carte des vins" :dishes="vins.dishes" :prices="vins.prices"/>
       <MenuComponent title="Desserts" :dishes="desserts.dishes" :prices="desserts.prices"/>
     </div>
-    <MenuGallery image3="/images/equipe.webp" image2="/images/blank-img.png" image1="/images/blank-img.png"/>
+    <MenuGallery image3="/images/blank-img.png" image2="/images/blank-img.png" image1="/images/blank-img.png"/>
   </div>
 </template>
 
@@ -101,7 +101,7 @@ export default {
 <style scoped>
 
 .menu-page {
-  padding: 75px 1rem 0 1rem;
+  padding: 75px 1.5rem 0 1.5rem;
 
   display: flex;
   flex-direction: column;
@@ -131,6 +131,14 @@ export default {
   margin-top: 1rem;
 
   transform: translate(-90%, 70px);
+}
+
+@media (max-width: 1000px) {
+  .menu-page__content {
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
 
 </style>

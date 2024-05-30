@@ -47,6 +47,9 @@ export default {
 .carousel__img {
   width: 80%;
   max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 600px) {
