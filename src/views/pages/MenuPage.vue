@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import MenuComponent from "../components/menu/MenuComponent.vue";
+import MenuGallery from "../components/menu/MenuGallery.vue";
 </script>
 
 <template>
@@ -20,6 +21,7 @@ import MenuComponent from "../components/menu/MenuComponent.vue";
       <MenuComponent title="Carte des vins" :dishes="vins.dishes" :prices="vins.prices"/>
       <MenuComponent title="Desserts" :dishes="desserts.dishes" :prices="desserts.prices"/>
     </div>
+    <MenuGallery image3="/images/equipe.webp" image2="/images/blank-img.png" image1="/images/blank-img.png"/>
   </div>
 </template>
 
