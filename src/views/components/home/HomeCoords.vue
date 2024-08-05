@@ -37,6 +37,7 @@
   align-items: center;
   gap: 1rem;
   padding: 2rem;
+  text-align: center;
 }
 
 .home-coords__map {

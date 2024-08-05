@@ -10,7 +10,7 @@ import MenuButton from "./MenuButton.vue";
       <!-- This is the Menu for big screens -->
       <div v-if="width.windowWidth > 800" class="site-header__large-browser-menu">
         <router-link to="/menu" class="site-header__large-browser-menu__button router-link">Menu</router-link>
-        <router-link to="/about" class="site-header__large-browser-menu__button router-link">Réservations</router-link>
+        <router-link to="/booking" class="site-header__large-browser-menu__button router-link">Réservations</router-link>
         <router-link to="/contact" class="site-header__large-browser-menu__button router-link">Nous trouver</router-link>
       </div>
 
@@ -26,7 +26,7 @@ import MenuButton from "./MenuButton.vue";
         <p>Menu</p>
         <img src="/icons/arrow.svg" class="site-header__large-browser-menu__button-image" alt="arrow">
       </router-link>
-      <router-link to="/about" class="site-header__large-browser-menu__button router-link" @click="toggleDropDown(false)">
+      <router-link to="/booking" class="site-header__large-browser-menu__button router-link" @click="toggleDropDown(false)">
         <p>Réservations</p>
         <img src="/icons/arrow.svg" class="site-header__large-browser-menu__button-image" alt="arrow">
       </router-link>
@@ -83,7 +83,7 @@ export default {
 .site-header__main-menu-button {
   color: var(--highlight-color);
   font-size: var(--h5-font-size);
-  font-family: var(--font-family-highlight);
+  font-family: var(--font-family-highlight), sans-serif;
   font-weight: bolder;
 }
 

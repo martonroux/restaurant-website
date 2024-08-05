@@ -52,7 +52,7 @@ export default {
 
 .menu-component__dishes-list {
   list-style: none;
-  font-family: var(--font-family-regular);
+  font-family: var(--font-family-regular), sans-serif;
   font-size: var(--font-size);
 
   width: 100%;
@@ -74,6 +74,12 @@ p {
   justify-content: space-between;
 
   border-bottom: 1px solid var(--black-color);
+}
+
+@media (max-width: 1000px) {
+  .menu-component {
+    text-align: center;
+  }
 }
 
 </style>

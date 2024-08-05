@@ -19,4 +19,9 @@ header {
   z-index: 100;
 }
 
+main {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 </style>
