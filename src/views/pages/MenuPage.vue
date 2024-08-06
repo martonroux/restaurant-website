@@ -105,7 +105,6 @@ export default {
 
   display: flex;
   flex-direction: column;
-  height: 100vh;
   width: 100%;
 }
 
@@ -118,7 +117,7 @@ export default {
 }
 
 .menu-page__title__highlight {
-  font-family: var(--font-family-highlight);
+  font-family: var(--font-family-highlight), sans-serif;
   font-weight: lighter;
   font-size: calc(var(--h1-font-size) * 1.3);
 

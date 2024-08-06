@@ -119,4 +119,10 @@ export default {
   text-align: right;
 }
 
+@media (max-width: 550px) {
+  .calendar-component__table {
+    width: 90.909vw;
+  }
+}
+
 </style>

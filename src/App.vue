@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import SiteHeader from "./views/components/header/SiteHeader.vue";
+import SiteFooter from "./views/components/footer/SiteFooter.vue";
 </script>
 
 <template>
@@ -9,6 +10,9 @@ import SiteHeader from "./views/components/header/SiteHeader.vue";
   <main>
     <router-view/>
   </main>
+  <footer>
+    <SiteFooter />
+  </footer>
 </template>
 
 <style scoped>
@@ -21,6 +25,7 @@ header {
 
 main {
   max-width: 1300px;
+  min-height: calc(100vh - 75px);
   margin: 0 auto;
 }
 

@@ -9,7 +9,7 @@ import CalendarComponent from "../components/booking/CalendarComponent.vue";
       <CalendarComponent :available="calendar" />
       <div class="booking-page__coords">
         <p class="booking-page__coords__small">Où nous trouver:</p>
-        <p class="booking-page__coords__big">3 Chem. du Barbu, 30420 Calvisson</p>
+        <p class="booking-page__coords__big">1 Chem. du Restaurant, 99000 Ville</p>
         <p class="booking-page__coords__small">Contact:</p>
         <p class="booking-page__coords__big">04 12 34 56 78</p>
         <img src="/icons/passionnee-line.png" alt="" class="booking-page__coords__line">
@@ -63,7 +63,8 @@ export default {
 }
 
 .booking-page__coords {
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -85,6 +86,16 @@ export default {
 .booking-page__coords__line {
   width: 165px;
   margin-top: -20px;
+}
+
+@media (max-width: 1100px) {
+  .booking-page__row {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 3rem;
+  }
 }
 
 </style>

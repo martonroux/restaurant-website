@@ -6,7 +6,7 @@
   <div class="home-coords">
     <div class="home-coords__text">
       <p class="home-coords__text__small">Où nous trouver:</p>
-      <p class="home-coords__text__big">3 Chem. du Barbu, 30420 Calvisson</p>
+      <p class="home-coords__text__big">1 Chem. du Restaurant, 99000 Ville</p>
       <p class="home-coords__text__small">Contact:</p>
       <p class="home-coords__text__big">04 12 34 56 78</p>
     </div>
