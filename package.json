@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist -t $GH_TOKEN"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "primeflex": "^3.3.1",
     "primeicons": "^7.0.0",
     "primevue": "^3.52.0",
@@ -17,6 +19,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
+    "gh-pages": "^6.1.1",
     "vite": "^5.2.0"
   }
 }
