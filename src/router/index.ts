@@ -40,7 +40,7 @@ const router = createRouter({
             component: TermsOfService
         }
     ],
-    history: createWebHistory(),
+    history: createWebHistory('/restaurant-website/'),
     scrollBehavior() {
         return { top: 0 };
     }
