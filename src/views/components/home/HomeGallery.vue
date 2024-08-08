@@ -1,5 +1,6 @@
-<script setup lang="ts">
+<script setup>
 import Gallery from "../generic/Gallery.vue";
+
 </script>
 
 <template>
@@ -8,19 +9,26 @@ import Gallery from "../generic/Gallery.vue";
   </Gallery>
 </template>
 
-<script lang="ts">
+<script>
+
+
+const getImageUrl = (imageName) => {
+  return `${import.meta.env.BASE_URL}images/${imageName}`
+}
 
 export default {
   data() {
     return {
       images: [
-        { img: "/images/blank-img.png" },
-        { img: "/images/blank-img.png" },
-        { img: "/images/blank-img.png" },
-        { img: "/images/blank-img.png" },
-        { img: "/images/blank-img.png" }
+        { img: getImageUrl("blank-img.png") },
+        { img: getImageUrl("blank-img.png") },
+        { img: getImageUrl("blank-img.png") },
+        { img: getImageUrl("blank-img.png") },
+        { img: getImageUrl("blank-img.png") }
       ]
     }
+  },
+  methods: {
   }
 }
 </script>

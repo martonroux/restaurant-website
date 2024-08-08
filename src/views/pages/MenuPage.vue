@@ -21,7 +21,7 @@ import MenuGallery from "../components/menu/MenuGallery.vue";
       <MenuComponent title="Carte des vins" :dishes="vins.dishes" :prices="vins.prices"/>
       <MenuComponent title="Desserts" :dishes="desserts.dishes" :prices="desserts.prices"/>
     </div>
-    <MenuGallery image3="/images/blank-img.png" image2="/images/blank-img.png" image1="/images/blank-img.png"/>
+    <MenuGallery image3="blank-img.png" image2="blank-img.png" image1="blank-img.png"/>
   </div>
 </template>
 
