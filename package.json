@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist -t $GH_TOKEN"
+    "deploy": "node deploy.js"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
