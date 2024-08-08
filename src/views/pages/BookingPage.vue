@@ -15,6 +15,7 @@ import CalendarComponent from "../components/booking/CalendarComponent.vue";
         <img src="/icons/passionnee-line.png" alt="" class="booking-page__coords__line">
       </div>
     </div>
+    <div class="booking-page__bottom-spacing"></div>
   </div>
 </template>
 
@@ -86,6 +87,11 @@ export default {
 .booking-page__coords__line {
   width: 165px;
   margin-top: -20px;
+}
+
+.booking-page__bottom-spacing {
+  height: 60px;
+  width: 1px;
 }
 
 @media (max-width: 1100px) {
