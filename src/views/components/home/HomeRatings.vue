@@ -10,7 +10,7 @@ import Carousel from "primevue/carousel";
     <div class="home-ratings__title-container">
       <h2>Avis de nos clients</h2>
     </div>
-    <Carousel class="home-ratings__carousel" :value="ratings" :num-visible="width.windowWidth > 1000 ? 3 : width.windowWidth > 800 ? 2 : 1" :num-scroll="1" :circular="true" :show-indicators="true" :autoplay-interval="8000">
+    <Carousel class="home-ratings__carousel" :value="ratings" :num-visible="width > 1000 ? 3 : width > 800 ? 2 : 1" :num-scroll="1" :circular="true" :show-indicators="true" :autoplay-interval="8000">
       <template v-slot:item="slotProps">
         <div class="home-ratings__carousel__rating">
           <ClientRating :username="slotProps.data.username" :date="slotProps.data.date" :description="slotProps.data.description" :rating="slotProps.data.rating"/>
@@ -21,8 +21,6 @@ import Carousel from "primevue/carousel";
 </template>
 
 <script>
-import {useWindowWidth} from "../../../composables/windowWidth.ts";
-
 export default {
   data() {
     return {
@@ -58,7 +56,7 @@ export default {
           "description": "Expérience inoubliable ! Les saveurs sont sublimes et le cadre est somptueux. Un sans faute du début à la fin."
         }
       ],
-      width: useWindowWidth()
+      width: window.innerWidth
     }
   }
 }

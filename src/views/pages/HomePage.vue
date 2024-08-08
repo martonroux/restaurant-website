@@ -30,18 +30,37 @@ import HomeCoords from "../components/home/HomeCoords.vue";
     <HomeGalery/>
     <HomeRatings/>
     <HomeCTA/>
-    <HomeCoords/>
+    <HomeCoords v-if="width > 800"/>
+    <span v-else class="separator"/>
   </div>
 </template>
 
 <script>
-import {useWindowWidth} from "../../composables/windowWidth.ts";
-
 export default {
   data() {
     return {
-      width: useWindowWidth()
-    };
+      width: window.innerWidth
+    }
+  },
+
+  mounted() {
+    this.$nextTick(() => {
+      window.addEventListener('resize', () => {
+        this.onResize();
+      });
+    })
+  },
+
+  beforeDestroy() {
+    window.removeEventListener('resize', () => {
+      this.onResize();
+    });
+  },
+
+  methods: {
+    onResize() {
+      this.width = window.innerWidth
+    }
   }
 };
 </script>

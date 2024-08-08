@@ -8,7 +8,7 @@ import Image from "primevue/image";
     <div class="gallery__title-container">
       <slot/>
     </div>
-    <Carousel class="carousel" :value="imageList" :num-visible="width.windowWidth > 1000 ? 3 : width.windowWidth > 800 ? 2 : 1" :num-scroll="1" :show-indicators="true">
+    <Carousel class="carousel" :value="imageList" :num-visible="width > 1000 ? 3 : width > 800 ? 2 : 1" :num-scroll="1" :show-indicators="true">
       <template v-slot:item="slotProps">
         <div class="carousel__img">
           <Image :src="slotProps.data.img" alt="Image" width="100%" preview />
@@ -19,12 +19,10 @@ import Image from "primevue/image";
 </template>
 
 <script>
-import {useWindowWidth} from "../../../composables/windowWidth.ts";
-
 export default {
   data() {
     return {
-      width: useWindowWidth()
+      width: window.innerWidth
     }
   },
   props: {

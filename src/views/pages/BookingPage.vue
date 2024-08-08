@@ -16,6 +16,17 @@ import CalendarComponent from "../components/booking/CalendarComponent.vue";
       </div>
     </div>
     <div class="booking-page__bottom-spacing"></div>
+    <div class="booking-page__map">
+      <iframe
+          style="border:0"
+          loading="lazy"
+          height="100%"
+          width="100%"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAFsTBIlPQc6n4ZesBNK0S81MA75TGhDlY
+    &q=Chem.+du+Restaurant,+Saint-Alexis-des-Monts,+QC+J0K+1V0,+Canada"/>
+    </div>
   </div>
 </template>
 
@@ -92,6 +103,11 @@ export default {
 .booking-page__bottom-spacing {
   height: 60px;
   width: 1px;
+}
+
+.booking-page__map {
+  height: 300px;
+  width: 100%;
 }
 
 @media (max-width: 1100px) {

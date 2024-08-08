@@ -1,5 +1,4 @@
 <script setup>
-
 </script>
 
 <template>
@@ -11,7 +10,15 @@
       <p class="home-coords__text__big">04 12 34 56 78</p>
     </div>
     <div class="home-coords__map">
-      <img src="/images/map.png" alt="Carte du restaurant" class="home-coors__map__img"/>
+      <iframe
+          style="border:0"
+          loading="lazy"
+          height="100%"
+          width="100%"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAFsTBIlPQc6n4ZesBNK0S81MA75TGhDlY
+    &q=Chem.+du+Restaurant,+Saint-Alexis-des-Monts,+QC+J0K+1V0,+Canada"/>
     </div>
   </div>
 </template>
@@ -54,11 +61,6 @@
 
 .home-coords__text__big {
   font-size: calc(var(--h6-font-size));
-}
-
-.home-coors__map__img {
-  height: 100%;
-  width: auto;
 }
 
 @media (max-width: 800px) {
