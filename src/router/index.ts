@@ -2,7 +2,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomePage from "../views/pages/HomePage.vue";
 import MenuPage from "../views/pages/MenuPage.vue";
-import ContactPage from "../views/pages/ContactPage.vue";
 import BookingPage from "../views/pages/BookingPage.vue";
 import TermsOfService from "../views/components/footer/TermsOfService.vue";
 import PrivacyPolicy from "../views/components/footer/PrivacyPolicy.vue";
@@ -23,11 +22,6 @@ const router = createRouter({
             path: '/booking',
             name: 'Réservations',
             component: BookingPage,
-        },
-        {
-            path: '/contact',
-            name: 'Contact',
-            component: ContactPage,
         },
         {
             path: '/privacy-policy',
