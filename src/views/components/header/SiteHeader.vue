@@ -23,15 +23,15 @@ import MenuButton from "./MenuButton.vue";
     <!-- This is the Dropdown menu -->
     <div v-if="dropDownActive" class="site-header__small-browser-menu">
       <router-link to="/menu" class="site-header__large-browser-menu__button router-link" @click="toggleDropDown(false)">
-        <p>Menu</p>
+        <p class="h6">Menu</p>
         <img src="/icons/arrow.svg" class="site-header__large-browser-menu__button-image" alt="arrow">
       </router-link>
       <router-link to="/booking" class="site-header__large-browser-menu__button router-link" @click="toggleDropDown(false)">
-        <p>Réservations</p>
+        <p class="h6">Réservations</p>
         <img src="/icons/arrow.svg" class="site-header__large-browser-menu__button-image" alt="arrow">
       </router-link>
       <router-link to="/contact" class="site-header__large-browser-menu__button router-link" @click="toggleDropDown(false)">
-        <p>Nous trouver</p>
+        <p class="h6">Nous trouver</p>
         <img src="/icons/arrow.svg" class="site-header__large-browser-menu__button-image" alt="arrow">
       </router-link>
     </div>
