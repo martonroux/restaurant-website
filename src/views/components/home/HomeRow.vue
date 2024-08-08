@@ -1,12 +1,14 @@
-<script setup lang="ts">
-
+<script setup>
+const getImageUrl = (imageName) => {
+  return `${import.meta.env.BASE_URL}images/${imageName}`
+}
 </script>
 
 <template>
   <div class="home-row">
     <!-- If imageSide is true, then image is to the left -->
     <div class="home-row__img-container" :style="{order : (imageSide && width.windowWidth > 800) ? 1 : 3}">
-      <img :src="imageUrl" alt="Image de la Maison Rocher" class="home-row__image-img">
+      <img :src="getImageUrl(imageUrl)" alt="Image de la Maison Rocher" class="home-row__image-img">
     </div>
 
     <div class="home-row__content" style="order: 2">
@@ -15,7 +17,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import {useWindowWidth} from "../../../composables/windowWidth.ts";
 
 export default {
