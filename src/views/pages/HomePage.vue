@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import HomeRow from "../components/home/HomeRow.vue";
 import SavoirFaireRow from "../components/home/rows/SavoirFaireRow.vue";
 import EquipePassionneeRow from "../components/home/rows/EquipePassionneeRow.vue";
@@ -34,7 +34,7 @@ import HomeCoords from "../components/home/HomeCoords.vue";
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import {useWindowWidth} from "../../composables/windowWidth.ts";
 
 export default {

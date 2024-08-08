@@ -7,9 +7,9 @@ import MenuGallery from "../components/menu/MenuGallery.vue";
   <div class="menu-page">
     <div class="menu-page__title">
       <h1>Notre
-        <span class="menu-page__title__highlight">
+        <span class="title highlight menu-page__title__highlight">
           Menu
-          <img src="/icons/menu-line.svg" alt="" class="menu-page__title__line"/>
+          <img src="/icons/unique-line.png" alt="" class="menu-page__title__line"/>
         </span>
       </h1>
     </div>
@@ -117,11 +117,7 @@ export default {
 }
 
 .menu-page__title__highlight {
-  font-family: var(--font-family-highlight), sans-serif;
-  font-weight: lighter;
-  font-size: calc(var(--h1-font-size) * 1.3);
-
-  margin-left: 0.5rem;
+  margin-left: 0.8rem;
 }
 
 .menu-page__title__line {
@@ -137,6 +133,13 @@ export default {
     flex-direction: column;
     max-width: 600px;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-page__title__line {
+    width: 160px;
+    transform: translate(-90%, 50px);
   }
 }
 

@@ -7,7 +7,7 @@ import CTAButton from "../../generic/CTAButton.vue";
     <div class="cadre-unique-row__title">
       <p class="h2">Un cadre</p>
       <div class="cadre-unique-row__title__draw">
-        <p class="h1" style="font-family: var(--font-family-highlight); font-weight: lighter">unique</p>
+        <p class="title highlight">unique</p>
         <img src="/icons/unique-line.png" alt="" class="cadre-unique-row__title__draw__drawing">
       </div>
     </div>
@@ -53,6 +53,10 @@ import CTAButton from "../../generic/CTAButton.vue";
 @media (max-width: 600px) {
   .cadre-unique-row__cta {
     width: 100%;
+  }
+
+  .cadre-unique-row__title__draw__drawing {
+    width: 140px;
   }
 }
 

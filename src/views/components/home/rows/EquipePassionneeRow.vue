@@ -7,7 +7,7 @@
     <div class="equipe-passionnee-row__title">
       <p class="h2">Une équipe</p>
       <div class="equipe-passionnee-row__title__draw">
-        <p class="h1" style="font-family: var(--font-family-highlight), sans-serif; font-weight: lighter">passionnée</p>
+        <p class="title highlight">passionnée</p>
         <img src="/icons/passionnee-line.png" alt="" class="equipe-passionnee-row__title__draw__drawing">
       </div>
     </div>
@@ -37,6 +37,12 @@
   position: absolute;
   transform: translateY(-170%);
   z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .equipe-passionnee-row__title__draw__drawing {
+    width: 140px;
+  }
 }
 
 </style>

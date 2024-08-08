@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 import CTAButton from "../../generic/CTAButton.vue";
 </script>
 
@@ -8,7 +7,7 @@ import CTAButton from "../../generic/CTAButton.vue";
     <div class="savoir-faire-row__title">
       <p class="h2">Un</p>
       <div class="savoir-faire-row__title__draw">
-        <p class="h1" style="font-family: var(--font-family-highlight); font-weight: lighter">savoir-faire</p>
+        <p class="title highlight">savoir-faire</p>
         <img src="/icons/savoir-faire-line.png" alt="" class="savoir-faire-row__title__draw__drawing">
       </div>
       <p class="h2">générationnel</p>
@@ -55,6 +54,10 @@ import CTAButton from "../../generic/CTAButton.vue";
 @media (max-width: 600px) {
   .savoir-faire-row__cta {
     width: 100%;
+  }
+
+  .savoir-faire-row__title__draw__drawing {
+    width: 180px;
   }
 }
 
