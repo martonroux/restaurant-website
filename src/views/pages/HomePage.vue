@@ -16,13 +16,13 @@ import HomeCoords from "../components/home/HomeCoords.vue";
       <img v-if="width.windowWidth > 800" src="/icons/maison-rocher-title.png" alt="Logo de la Maison Rocher" class="home-page__logo-img">
       <img v-else src="/icons/maison-rocher-title-small.png" alt="Logo de la Maison Rocher" class="home-page__logo-img">
     </div>
-    <HomeRow image-url="/images/michelin-food.webp" :image-side="true">
+    <HomeRow image-url="michelin-food.webp" :image-side="true">
       <SavoirFaireRow/>
     </HomeRow>
-    <HomeRow image-url="/images/equipe.webp" :image-side="false">
+    <HomeRow image-url="equipe.webp" :image-side="false">
       <EquipePassionneeRow/>
     </HomeRow>
-    <HomeRow image-url="/images/manor.webp" :image-side="true">
+    <HomeRow image-url="manor.webp" :image-side="true">
       <CadreUniqueRow/>
     </HomeRow>
     <span class="separator"/>
