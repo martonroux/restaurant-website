@@ -9,58 +9,58 @@
         Nos horaires
       </caption>
       <tr>
-        <td :style="{'border-bottom': activeDay === 'monday' ? '1px solid var(--highlight-color)' : '1px solid var(--black-color)'}">
+        <td :style="{'border-bottom': activeDay === 'monday' ? activeBorderColor : inactiveBorderColor}">
           Lundi
         </td>
-        <td :style="{'border-bottom': activeDay === 'monday' ? '1px solid var(--highlight-color)' : '1px solid var(--black-color)'}">
+        <td :style="{'border-bottom': activeDay === 'monday' ? activeBorderColor : inactiveBorderColor}">
           {{ available['monday_start'] }}h - {{ available['monday_end'] }}h
         </td>
       </tr>
       <tr>
-        <td :style="{'border-bottom': activeDay === 'tuesday' ? '1px solid var(--highlight-color)' : '1px solid var(--black-color)'}">
+        <td :style="{'border-bottom': activeDay === 'tuesday' ? activeBorderColor : inactiveBorderColor}">
           Mardi
         </td>
-        <td :style="{'border-bottom': activeDay === 'tuesday' ? '1px solid var(--highlight-color)' : '1px solid var(--black-color)'}">
+        <td :style="{'border-bottom': activeDay === 'tuesday' ? activeBorderColor : inactiveBorderColor}">
           {{ available['tuesday_start'] }}h - {{ available['tuesday_end'] }}h
         </td>
       </tr>
       <tr>
-        <td :style="{'border-bottom': activeDay === 'wednesday' ? '1px solid var(--highlight-color)' : '1px solid var(--black-color)'}">
+        <td :style="{'border-bottom': activeDay === 'wednesday' ? activeBorderColor : inactiveBorderColor}">
           Mercredi
         </td>
-        <td :style="{'border-bottom': activeDay === 'wednesday' ? '1px solid var(--highlight-color)' : '1px solid var(--black-color)'}">
+        <td :style="{'border-bottom': activeDay === 'wednesday' ? activeBorderColor : inactiveBorderColor}">
           {{ available['wednesday_start'] }}h - {{ available['wednesday_end'] }}h
         </td>
       </tr>
       <tr>
-        <td :style="{'border-bottom': activeDay === 'thursday' ? '1px solid var(--highlight-color)' : '1px solid var(--black-color)'}">
+        <td :style="{'border-bottom': activeDay === 'thursday' ? activeBorderColor : inactiveBorderColor}">
           Jeudi
         </td>
-        <td :style="{'border-bottom': activeDay === 'thursday' ? '1px solid var(--highlight-color)' : '1px solid var(--black-color)'}">
+        <td :style="{'border-bottom': activeDay === 'thursday' ? activeBorderColor : inactiveBorderColor}">
           {{ available['thursday_start'] }}h - {{ available['thursday_end'] }}h
         </td>
       </tr>
       <tr>
-        <td :style="{'border-bottom': activeDay === 'friday' ? '1px solid var(--highlight-color)' : '1px solid var(--black-color)'}">
+        <td :style="{'border-bottom': activeDay === 'friday' ? activeBorderColor : inactiveBorderColor}">
           Vendredi
         </td>
-        <td :style="{'border-bottom': activeDay === 'friday' ? '1px solid var(--highlight-color)' : '1px solid var(--black-color)'}">
+        <td :style="{'border-bottom': activeDay === 'friday' ? activeBorderColor : inactiveBorderColor}">
           {{ available['friday_start'] }}h - {{ available['friday_end'] }}h
         </td>
       </tr>
       <tr>
-        <td :style="{'border-bottom': activeDay === 'saturday' ? '1px solid var(--highlight-color)' : '1px solid var(--black-color)'}">
+        <td :style="{'border-bottom': activeDay === 'saturday' ? activeBorderColor : inactiveBorderColor}">
           Samedi
         </td>
-        <td :style="{'border-bottom': activeDay === 'saturday' ? '1px solid var(--highlight-color)' : '1px solid var(--black-color)'}">
+        <td :style="{'border-bottom': activeDay === 'saturday' ? activeBorderColor : inactiveBorderColor}">
           {{ available['saturday_start'] }}h - {{ available['saturday_end'] }}h
         </td>
       </tr>
       <tr>
-        <td :style="{'border-bottom': activeDay === 'sunday' ? '1px solid var(--highlight-color)' : '1px solid var(--black-color)'}">
+        <td :style="{'border-bottom': activeDay === 'sunday' ? activeBorderColor : inactiveBorderColor}">
           Dimanche
         </td>
-        <td :style="{'border-bottom': activeDay === 'sunday' ? '1px solid var(--highlight-color)' : '1px solid var(--black-color)'}">
+        <td :style="{'border-bottom': activeDay === 'sunday' ? activeBorderColor : inactiveBorderColor}">
           {{ available['sunday_start'] }}h - {{ available['sunday_end'] }}h
         </td>
       </tr>
@@ -72,7 +72,9 @@
 export default {
   data() {
     return {
-      activeDay: ''
+      activeDay: '',
+      activeBorderColor: '1px solid var(--highlight-color)',
+      inactiveBorderColor: '1px solid gray'
     }
   },
   props: {
