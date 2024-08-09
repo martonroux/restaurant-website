@@ -1,6 +1,6 @@
-<script setup lang="ts">
+<script setup>
 import MenuComponent from "../components/menu/MenuComponent.vue";
-import MenuGallery from "../components/menu/MenuGallery.vue";
+import Gallery from "../components/generic/Gallery.vue";
 import { useHead } from '@vueuse/head';
 
 useHead({
@@ -11,6 +11,10 @@ useHead({
     { name: 'robots', content: 'index, follow' }
   ],
 });
+
+const getImageUrl = (imageName) => {
+  return `${import.meta.env.BASE_URL}images/${imageName}`
+}
 </script>
 
 <template>
@@ -31,11 +35,13 @@ useHead({
       <MenuComponent title="Carte des vins" :dishes="vins.dishes" :prices="vins.prices"/>
       <MenuComponent title="Desserts" :dishes="desserts.dishes" :prices="desserts.prices"/>
     </div>
-    <MenuGallery image3="blank-img.png" image2="blank-img.png" image1="blank-img.png"/>
+    <Gallery :circular="true" :autoplay-interval="4000" :image-list="[{img: getImageUrl('blank-img.png')}, {img: getImageUrl('blank-img.png')}, {img: getImageUrl('blank-img.png')}, {img: getImageUrl('blank-img.png')}]">
+      <h3>Un avant goût:</h3>
+    </Gallery>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
   data() {
     return {
