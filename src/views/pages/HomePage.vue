@@ -4,7 +4,6 @@ import SavoirFaireRow from "../components/home/rows/SavoirFaireRow.vue";
 import EquipePassionneeRow from "../components/home/rows/EquipePassionneeRow.vue";
 import CadreUniqueRow from "../components/home/rows/CadreUniqueRow.vue";
 import RotatingBanner from "../components/home/RotatingBanner.vue";
-import HomeGalery from "../components/home/HomeGallery.vue";
 import HomeRatings from "../components/home/HomeRatings.vue";
 import HomeCTA from "../components/home/HomeCTA.vue";
 import HomeCoords from "../components/home/HomeCoords.vue";
@@ -37,7 +36,6 @@ useHead({
     </HomeRow>
     <span class="separator"/>
     <RotatingBanner/>
-    <HomeGalery/>
     <HomeRatings/>
     <HomeCTA/>
     <HomeCoords v-if="width > 800"/>
