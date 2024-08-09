@@ -8,6 +8,16 @@ import HomeGalery from "../components/home/HomeGallery.vue";
 import HomeRatings from "../components/home/HomeRatings.vue";
 import HomeCTA from "../components/home/HomeCTA.vue";
 import HomeCoords from "../components/home/HomeCoords.vue";
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: 'Maison Rocher - Cuisine française depuis 1927',
+  meta: [
+    { name: 'description', content: 'Venez découvrir la Maison Rocher! Notre chef étoilé vous propose des plats qui vous feront tous voyager au travers de la culture gastronomique française. Le cadre naturel iconique du manoir de la Maison Rocher ajoute une touche d\'originalité, qui ne fera qu\'ajouter à l\'expérience.' },
+    { name: 'keywords', content: 'cuisine, restaurant, français, gastronomique, maison rocher, france' },
+    { name: 'robots', content: 'index, follow' }
+  ],
+});
 </script>
 
 <template>

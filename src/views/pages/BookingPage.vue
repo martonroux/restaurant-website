@@ -1,5 +1,15 @@
 <script setup>
 import CalendarComponent from "../components/booking/CalendarComponent.vue";
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: 'Maison Rocher - Réservations',
+  meta: [
+    { name: 'description', content: 'Horaires d\'ouverture et adresses de contact de la Maison Rocher. Réservez une table dès maintenant!' },
+    { name: 'keywords', content: 'réservations, contact, maison rocher' },
+    { name: 'robots', content: 'index, follow' }
+  ],
+});
 </script>
 
 <template>

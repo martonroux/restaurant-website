@@ -1,6 +1,16 @@
 <script setup lang="ts">
 import MenuComponent from "../components/menu/MenuComponent.vue";
 import MenuGallery from "../components/menu/MenuGallery.vue";
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: 'Maison Rocher - Notre Menu',
+  meta: [
+    { name: 'description', content: 'Venez découvrir le menu de la Maison Rocher. Chaque plat est travaillé avec soin et relève de l\'expérience légendaire de notre chef étoilé.' },
+    { name: 'keywords', content: 'menu, maison rocher, gastronomique' },
+    { name: 'robots', content: 'index, follow' }
+  ],
+});
 </script>
 
 <template>
