@@ -143,6 +143,7 @@ export default {
     flex-direction: column;
     max-width: 600px;
     margin: 0 auto;
+    gap: 0;
   }
 }
 
